@@ -55,7 +55,7 @@
                 <artifactId>frontend-maven-plugin</artifactId>
                 <version>1.13.3</version>
                 <configuration>
-                    <workingDirectory>../frontend-test</workingDirectory>
+                    <workingDirectory>frontend-test</workingDirectory>
                     <installDirectory>target</installDirectory>
                     <nodeVersion>v22.21.0</nodeVersion>
                 </configuration>
@@ -102,7 +102,7 @@
                             <outputDirectory>${project.build.directory}/classes/static</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>../frontend-test/dist/frontend-test/browser</directory>
+                                    <directory>frontend-test/dist/frontend-test/browser</directory>
                                 </resource>
                             </resources>
                         </configuration>

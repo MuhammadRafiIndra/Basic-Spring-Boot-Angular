@@ -3,7 +3,7 @@ FROM maven:3.9.11-eclipse-temurin-25-noble AS build
 WORKDIR /app
 COPY backend-test/pom.xml .
 COPY backend-test/src ./src
-COPY frontend-test ./frontend-test
+COPY backend-test/frontend-test ./frontend-test
 RUN mvn clean package -DskipTests
 
 # Step 2: Run stage
